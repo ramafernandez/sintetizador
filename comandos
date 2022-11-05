@@ -1,0 +1,69 @@
+####Lista de comandos de la terminal
+
+pwd (Me dice la ruta donde estoy)
+
+ls (Me muestra que hay dentro)
+	flags: -l (detalles) -al (mostrar ocultos y detalles)
+
+history (Muestra historial de comandos)
+
+cd - (Vuelve al directorio donde estaba anteriormente)
+
+cd <ruta> (Me lleva a la ruta indicada)
+
+cd ~/<ruta> (Vuelve a la raíz y despúes va a la ruta)
+
+touch <nombre> (Me crea un archivo <nombre>)
+
+mv <oldname> <newname> (Modifica el nombre del archivo <oldname> por <newname>)
+#mv puede pisar otro archivo que se llame igual que <newname>
+
+echo $? (me dice que devolvió el programa anterior)
+
+
+#####Lista comandos Git
+
+git init (inicializa un repositorio en la carpeta)
+
+git add <archivo> (añade el archivo al área de presentación)
+
+git add . (añade todos los archivos)
+
+git rm <archivo> (elimina el archivo del área de presentación)
+
+git rm . (elimina todos los archivos del área de presentación)
+
+git status (muestra el estado de los archivos)
+
+git commit -m "mesnaje" (agrega "mensaje" al historial)
+
+#para guardar los cambios hay que hacer git add lo que cambie y
+	git commit -m "mensaje"#
+
+git log (te muestra el historial)
+	flags: --oneline (simplifica el historial)
+
+#en el historial simplificado los primeros numeros de la izquierda son
+	el hash, el HEAD es donde estoy parado#
+
+git checkout <hash> (vuelvo al bransh hash)
+#esto no revierte el código, 'le da un vistazo'#
+#el bransh son ramas del código principal(master)#
+
+git checkout master (vuelvo al código principal)
+
+git checkout
+falgs: -b <nombre> (creo un nuevo bransh nombre desde donde estoy parado)
+
+#creo mi repositorio remoto con github y lo linkeo con el repositorio
+local de git#
+git remote add origin <link> #el link lo saco de github#
+
+git push origin <bransh> (sube el bransh al repositorio remoto)
+git push origin master (sube el master al repositorio remoto)
+
+git clone <link> (clona el repo remoto en git)
+
+git pull origin <bransh> (trae de github los cambios del bransh)
+
+git merge <bransh> (une bransh con con el master)
